@@ -127,3 +127,17 @@ class Webpack(object):
             return None
 
         return '{0}{1}'.format(self.assets_url, self.assets[asset])
+
+    def hashed_name(self, asset):
+        """
+        Lookup the hashed asset name of a file name.
+
+        :param asset: A logical path to an asset
+        :type asset: str
+        :return: Hashed asset name or None if not found
+        """
+
+        if asset not in self.assets:
+            return None
+
+        return '{0}'.format(self.assets[asset])
