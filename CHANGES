@@ -1,6 +1,11 @@
 Flask-Webpack changelog
 =======================
 
+Version 0.2.0
+-------------
+
+- Add function to return only the hashed value of an asset
+
 Version 0.1.0
 -------------
 
