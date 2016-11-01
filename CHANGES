@@ -1,10 +1,15 @@
 Flask-Webpack changelog
 =======================
 
+Version 0.2.1
+-------------
+
+- `asset_url_for()` now matches part of the asset name.
+
 Version 0.2.0
 -------------
 
-- Add function to return only the hashed value of an asset
+- Add function `asset_hashed_name_for()` that returns only the hashed name of an asset
 
 Version 0.1.0
 -------------
