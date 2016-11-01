@@ -126,10 +126,11 @@ class Webpack(object):
         if '//' in asset:
             return asset
 
-        if asset not in self.assets:
-            return None
+        for key in self.assets:
+            if asset in key:
+                return '{0}{1}'.format(self.assets_url, self.assets[asset])
 
-        return '{0}{1}'.format(self.assets_url, self.assets[asset])
+        return None
 
     def hashed_name(self, asset):
         """
