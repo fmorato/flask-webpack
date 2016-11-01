@@ -132,7 +132,7 @@ class Webpack(object):
 
         return None
 
-    def hashed_name(self, asset):
+    def asset_hashed_name_for(self, asset):
         """
         Lookup the hashed asset name of a file name.
 
