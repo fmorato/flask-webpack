@@ -128,7 +128,7 @@ class Webpack(object):
 
         for key in self.assets:
             if asset in key:
-                return '{0}{1}'.format(self.assets_url, self.assets[asset])
+                return '{0}{1}'.format(self.assets_url, self.assets[key])
 
         return None
 
